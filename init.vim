@@ -22,8 +22,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 
 " Tmux
-Plug 'benmills/vimux'
-Plug 'christoomey/vim-tmux-navigator'
+"Plug 'benmills/vimux'
+"Plug 'christoomey/vim-tmux-navigator'
 
 " Autocomplete
 Plug 'sirver/ultisnips'
@@ -64,7 +64,8 @@ imap <S-Right> <Esc>v<Right>
 
 " remap delete <d> to backspace
 nmap <BS> d
-vmap <BS> d
+imap <BS> di
+vmap <BS> di
 
 " ctrl+c , ctrl+v , ctrl+z behaviour like other text editors remap
 vmap <C-c> y<Esc>i
@@ -73,3 +74,4 @@ vnoremap <C-c> "+y
 map <C-v> "+p
 imap <C-v> <Esc>pi
 imap <C-z> <Esc>ui
+nmap <C-z> u
