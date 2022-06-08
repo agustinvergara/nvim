@@ -1,41 +1,52 @@
 " Nvim config and plugins
 
 " Numbers at the left side
-set number 
+set number
+
+" build in file type detection 
+filetype on
 
 " Plugin pacage manager
 call plug#begin('~/.config/nvim/plugged')
 
 " Typing
-Plug 'chun-yang/auto-pairs'
-Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-surround'
+Plug 'chun-yang/auto-pairs',
+Plug 'alvan/vim-closetag',
+Plug 'tpope/vim-surround',
+
+" Completion engine for Python-django
+Plug 'ycm-core/YouCompleteMe',
+Plug 'sukima/xmledit',
+
+" Python syntax corrector
+Plug 'vim-syntastic/syntastic',
+
 
 " Syntax highlighter
-Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot',
 
 " Status bar
-Plug 'maximbaz/lightline-ale'
-Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale',
+Plug 'itchyny/lightline.vim',
 
 " Tree
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree',
 
 " Tmux
 "Plug 'benmills/vimux'
 "Plug 'christoomey/vim-tmux-navigator'
 
 " Autocomplete
-Plug 'sirver/ultisnips'
-Plug 'neoclide/coc.nvim', {'branch':'release'}
+Plug 'sirver/ultisnips',
+Plug 'neoclide/coc.nvim', {'branch':'release'},
 
 " Themes
-Plug 'dracula/vim', {'as':'dracula'}
+Plug 'dracula/vim', {'as':'dracula'},
 
 " Editorconfig 
-Plug 'editorconfig/editorconfig-vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'yggdroot/indentline'
+Plug 'editorconfig/editorconfig-vim',
+Plug 'easymotion/vim-easymotion',
+Plug 'yggdroot/indentline',
 
 call plug#end()
 
