@@ -170,6 +170,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "------------------------------------------------------------------------------
 " Numbers at the left side
 set number
+set relativenumber
 
 " build in file type detection -----off cause vundle need it like that
 "filetype on
